@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejav</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+<header>
+    <h1>Dejav</h1>
+    <p>Dejav For Java Developers</p>
+</header>
+
+<div th:if="${ not#lists.isEmpty(jobs)}">
+<section class="box1" th:each = "job : ${jobs}">
+    <div class="box1-inner" >
+        <h2>Amazon</h2>
+        <p>Java Developer</p>
+        <p> 1+ years</p>
+        <p>Bangalore</p>
+        <p>Java, Spring</p>
+        <p>10 LPA</p>
+        <a href="www.amazon.com">View Details</a>
+    </div>
+
+    <div class="box1-inner" >
+        <h2>Amazon</h2>
+        <p>Java Developer</p>
+        <p> 1+ years</p>
+        <p>Bangalore</p>
+        <p>Java, Spring</p>
+        <p>10 LPA</p>
+        <a href="www.amazon.com">View Details</a>
+    </div>
+
+    <div class="box1-inner" >
+        <h2>Amazon</h2>
+        <p>Java Developer</p>
+        <p> 1+ years</p>
+        <p>Bangalore</p>
+        <p>Java, Spring</p>
+        <p>10 LPA</p>
+        <a href="www.amazon.com">View Details</a>
+    </div>
+
+    <div class="box1-inner" >
+        <h2>Amazon</h2>
+        <p>Java Developer</p>
+        <p> 1+ years</p>
+        <p>Bangalore</p>
+        <p>Java, Spring</p>
+        <p>10 LPA</p>
+        <a href="www.amazon.com">View Details</a>
+    </div>
+
+</section>
+</div>
+
+
+</body>
+</html>

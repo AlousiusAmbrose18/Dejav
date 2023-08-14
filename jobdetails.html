@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejav</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+<header>
+    <h1>Dejav</h1>
+    <p>Dejav For Java Developers</p>
+</header>
+<div>
+    <section class="box1" th:object="${job}">
+        <div class="box1-inner" >
+            <h2 th:text="${job.companyName}"></h2>
+            <p th:text="${job.jobTitle}"></p>
+            <p th:text="${job.experience}"></p>
+            <p th:text="${job.location}"></p>
+            <p th:text="${job.requiredSkills}">/p>
+            <p th:text="${job.salary}"></p>
+            <h4>Job Description</h4>
+            <p class="job-description" th:text="${job.jobDescription}"></p>
+            <a th:href="${job.jobLink}" target="_blank">Apply</a>
+        </div>
+    </section>
+</div>
+<footer>
+    <p>&copy; 2023 Dejav - Alousius. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
